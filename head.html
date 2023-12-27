@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add any additional styling as needed */
+        .clicked {
+            /* Text color for the clicked link */
+            color: red; /* Change this to your desired text color */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Click event for all links
+            $('a').click(function () {
+                // Remove the clicked class from all links
+                $('a').removeClass('clicked');
+                
+                // Add the clicked class to the clicked link
+                $(this).addClass('clicked');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="PageHeader">
+        <!--This is the head of the page and visible the categories-->
+        <div class="header">
+            <p class="logo">ForYou</p>
+            <nav class="navigation">
+                <input type="text" class="search" placeholder="Start search here" name="search">
+                <a href="dresses_categories/all.html" target="body_page">All</a>
+                <a href="dresses_categories/mens.html" target="body_page">Mens</a>
+                <a href="dresses_categories/womens.html" target="body_page">Womens</a>
+                <a href="dresses_categories/kids.html" target="body_page">Kids</a>
+                <a href="dresses_categories/herooutfits.html" target="body_page">Hero Outfit's</a>
+                <a href="#">Menu</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>  
+        </div>
+    </div>
+</body>
+</html>
